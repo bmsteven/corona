@@ -7,7 +7,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   height: 100%;
   color: white;
 }
@@ -29,4 +28,15 @@
 
 .emergency .container .right span a:hover {
   opacity: .7;
+}
+
+@media screen and (max-width: 545px) {
+  .emergency .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .emergency .container .right {
+    align-self: flex-end;
+    margin-top: 30px;
+  }
 }
