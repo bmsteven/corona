@@ -3,8 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -33,22 +32,19 @@ ul {
   list-style: none;
 }
 
+img.spinner {
+  padding: 50px 0;
+  width: 70px;
+  height: auto;
+}
+
 a.primary-btn {
   border-radius: 5px;
   font-weight: 700;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: all 250ms;
+  appearance: none;
+  align-items: center;
+  justify-content: center;
   transition: all 250ms;
   position: relative;
   white-space: nowrap;
@@ -86,23 +82,16 @@ nav {
   top: 0;
   width: 100%;
   height: 5rem;
-  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   background: white;
   z-index: 999;
 }
 
 nav .container {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav .container .logo h1 {
@@ -114,17 +103,10 @@ nav .container .logo h1 a {
 }
 
 nav .container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   padding-left: 50px;
 }
 
@@ -146,16 +128,9 @@ nav .container ul li a:hover {
     height: 7rem;
   }
   nav .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
   nav .container ul {
     padding: 0;
@@ -175,29 +150,17 @@ nav .container ul li a:hover {
 }
 
 .emergency .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   height: 100%;
   color: white;
 }
 
 .emergency .container .right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding-left: 50px;
 }
 
@@ -216,15 +179,9 @@ nav .container ul li a:hover {
 
 .source .container {
   padding: 100px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .source .container .left {
@@ -305,14 +262,9 @@ nav .container ul li a:hover {
 }
 
 .stats .container .facts section .showcase {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -322,21 +274,11 @@ nav .container ul li a:hover {
   min-width: 150px;
   height: 100px;
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 10px 0;
   background: #2D3748;
   color: white;
@@ -371,12 +313,8 @@ nav .container ul li a:hover {
     text-align: center;
   }
   .stats .container .facts section .showcase {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .stats .container .facts section .showcase .statBlock {
     width: 60%;
@@ -407,17 +345,10 @@ nav .container ul li a:hover {
 }
 
 .symptoms .container .showcase {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
   padding: 30px 0;
 }
 
@@ -428,8 +359,7 @@ nav .container ul li a:hover {
   width: 33%;
   min-width: 180px;
   padding: 3rem 0.2rem;
-  -webkit-box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.4), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.4), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.4), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   text-align: center;
   background: #F7FAFC;
 }
@@ -446,9 +376,7 @@ nav .container ul li a:hover {
 
 @media screen and (max-width: 430px) {
   .symptoms .container .showcase {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .symptoms .container .showcase article {
     width: 80%;
@@ -464,15 +392,9 @@ footer {
 
 footer .container {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 footer .container .icon {
@@ -509,4 +431,3 @@ footer .container a {
     top: 7rem;
   }
 }
-/*# sourceMappingURL=styles.css.map */

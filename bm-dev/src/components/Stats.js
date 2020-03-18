@@ -31,7 +31,7 @@ const Stats = ({ url }) => {
   if (!stats && !error) {
     return (
       <section>
-        <img src={Spinner} alt='spinner' />
+        <img src={Spinner} alt='spinner' className="spinner"/>
       </section>
     );
   } else {
