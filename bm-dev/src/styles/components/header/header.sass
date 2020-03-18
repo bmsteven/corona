@@ -1,0 +1,40 @@
+@import "../../_variables";
+body
+    min-height: 100vh;
+    position: relative;
+
+.header-container
+    min-height: 900px;
+    min-width: 100vw;
+    // background: $secondaryColor;
+    .top-nav, .main-nav
+        background: $primaryColor;
+        width: 100%;
+        .container
+            width: 80%;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+
+
+@import "./_top-nav";
+@import "./_main-nav";
+@import "./_banner";
+
+
+.down-nav
+    position: absolute;
+    min-height: 100vh;
+    height 700px;
+    width: 100vw;
+    top: 0;
+
+svg
+    position: absolute;
+    left: 50%;
+
+

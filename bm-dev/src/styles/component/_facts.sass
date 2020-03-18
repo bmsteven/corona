@@ -1,0 +1,78 @@
+.stats
+    background: #F7FAFC
+    width: 100%
+    .container
+        padding: 5rem 0
+        h1
+            font-size: 1.825rem
+            padding-bottom: 20px
+        a.primary-btn
+            margin: 30px 0 0 0
+        .facts
+            padding: 20px 0
+            p
+                font-size: 1.125rem
+                line-height: 2rem
+                color: #718096
+                padding-bottom: 1.5rem
+            section
+                small
+                    display: block
+                    padding: 0px 0 20px 0
+                    span
+                        font-size: smaller
+                .showcase
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: space-between
+                    font-family: 'Raleway', sans-serif
+                    .statBlock
+                        text-align: center
+                        // padding: 30px
+                        width: 23%
+                        min-width: 150px
+                        height: 100px
+                        border-radius: 10px
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        align-items: center
+                        flex-wrap: wrap
+                        margin: 10px 0
+                        background: #2D3748
+                        color: white
+                        h3
+                            margin-bottom: 10px
+                        h2
+                            font-size: 1.8rem
+
+@media screen and ( max-width: 545px )
+    .stats
+        .container
+            padding: 7rem 0 4rem 0
+            .facts
+                section
+                    .showcase
+                        .statBlock
+                            width: 45%
+                            h2
+                                font-size: 1.5rem
+                            h3
+                                font-size: 1.2rem
+
+@media screen and ( max-width: 356px )
+    .stats
+        .container
+            padding: 7rem 0 4rem 0
+            text-align: center
+            .facts
+                section
+                    .showcase
+                        align-items: center
+                        justify-content: center
+                        .statBlock
+                            width: 60%
+                            h2
+                                font-size: 1.5rem
+                            h3
+                                font-size: 1.2rem

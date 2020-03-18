@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css?family=Solway&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap')
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html, body
+    scroll-behavior: smooth
+
+body
+    font-family: 'Solway', serif
+    overflow-x: hidden
+
+h1
+    font-size: 3.5rem
+h2
+    font-size: 1.5rem
+    padding-bottom: 15px
+a
+    text-decoration: none
+ul
+    list-style: none
+a.primary-btn
+    border-radius: 5px
+    font-weight: 700
+    display: inline-flex
+    appearance: none
+    align-items: center
+    justify-content: center
+    transition: all 250ms
+    // user-select: none
+    position: relative
+    white-space: nowrap
+    vertical-align: middle
+    line-height: 1.2
+    outline: none
+    height: 3rem
+    min-width: 3rem
+    font-size: 0.875rem
+    padding-left: 3rem
+    padding-right: 3rem
+    background-color: #2F855A
+    color: #F7FAFC
+    &:hover
+        background: #F7FAFC
+        color: #2F855A
+        outline: 1px solid #2F855A
+
+.container
+    width: 60%
+    margin:  auto
+
+main
+    top: 5rem
+    bottom: 1rem
+    position: relative
+
+@import "./component/_nav"
+@import "./component/_emergency"
+@import  "./component/_source"
+@import "./component/_facts"
+@import "./component/_symptoms"
+@import "./component/_footer"
+
+.corona-map
+    width: 100%
+    img
+        width: 100%
+
+@media screen and ( max-width: 900px )
+    .container
+        width: 80%
+
+@media screen and ( max-width: 612px )
+    .container
+        width: 90%
+    
+@media screen and ( max-width: 545px )
+    main
+        top: 7rem

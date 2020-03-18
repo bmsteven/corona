@@ -1,0 +1,21 @@
+footer {
+  position: relative;
+  bottom: 0;
+  padding: 30px 0;
+}
+
+footer .container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .container .icon {
+  color: red;
+  margin: 0 10px;
+}
+
+footer .container a {
+  margin-left: 10px;
+}

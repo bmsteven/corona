@@ -1,0 +1,4 @@
+[build]
+base = "bm-dev/"
+publish = "/build/"
+command = "yarn build"

@@ -1,0 +1,32 @@
+.source
+    .container
+        padding: 100px 0
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        .left
+            width: 60%
+            h2
+                font-size: 1.875rem
+                line-height: 2.5rem
+                font-family: 'Raleway', sans-serif
+                font-weight: 600
+                padding-bottom: 1.5rem
+                span
+                    color: red
+            p
+                font-size: 1.125rem
+                line-height: 2rem
+                color: #718096
+                padding-bottom: 1.5rem
+        .right
+            width: 40%
+
+@media screen and ( max-width: 992px )
+    .source
+        .container
+            padding: 50px 0
+            .left
+                width: 100%
+            .right
+                display: none
