@@ -18,19 +18,19 @@ const Countries = () => {
   return countr;
 };
 
-// const Country = () => {
-//   const [count, setCount] = useState();
-//   useEffect(() => {
-//     const fetchData = async () => {
-//       const data = await fetch("https://covid19.mathdro.id/api/countries")
-//         .then(res => res.json())
-//         .catch(err => console.error(err));
-//       setCount(data);
-//     };
-//     fetchData();
-//   }, []);
-//   return count;
-// };
+const Country = () => {
+  const [count, setCount] = useState();
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await fetch("https://covid19.mathdro.id/api/countries")
+        .then(res => res.json())
+        .catch(err => console.error(err));
+      setCount(data);
+    };
+    fetchData();
+  }, []);
+  return count;
+};
 
 const NavBar = () => {
   return (
@@ -56,8 +56,8 @@ const NavBar = () => {
 
 const AllCountries = () => {
   const countr = Countries();
-  console.log(countr);
-  // const count = Country();
+  console.log(countr.countries);
+  const count = Country();
   // console.log(count);
   useEffect(() => {
     document.title = `All countries COVID-19 - coronavirus pandemic updates`;
@@ -88,7 +88,7 @@ const AllCountries = () => {
                 <span>Deaths</span>
               </li>
               <li>
-                {/* {Object.entries(countr.countries).map(([country, code]) => {
+                {/* {Object.entries(count.country).map(([country, code]) => {
                   return (
                     <Statistics
                       url={`https://covid19.mathdro.id/api/countries/${country}`}
@@ -107,3 +107,5 @@ const AllCountries = () => {
 };
 
 export default AllCountries;
+
+//toDo call mamdogo

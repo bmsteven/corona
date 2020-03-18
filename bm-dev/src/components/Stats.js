@@ -31,16 +31,12 @@ const Stats = ({ url }) => {
   if (!stats && !error) {
     return (
       <section>
-        <img src={Spinner} alt='spinner' className="spinner"/>
+        <img src={Spinner} alt='spinner' className='spinner' />
       </section>
     );
   } else {
     return (
       <section>
-        {/* {stats.lastUpdate && {
-          let time = stats.lastUpdate
-
-        }} */}
         <small>
           Imechapishwa:{" "}
           {stats.lastUpdate ? <span>{stats.lastUpdate}</span> : <span></span>}
@@ -64,8 +60,12 @@ const Stats = ({ url }) => {
           </div>
           <div className='statBlock'>
             <h3>Walio Wagonjwa</h3>
-            {stats.recovered && stats.confirmed ? (
-              <h2>{stats.confirmed.value - stats.recovered.value}</h2>
+            {stats.recovered && stats.confirmed && stats.deaths ? (
+              <h2>
+                {stats.confirmed.value -
+                  stats.recovered.value -
+                  stats.deaths.value}
+              </h2>
             ) : (
               <h3>haijarekodiwa</h3>
             )}
