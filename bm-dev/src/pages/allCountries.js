@@ -56,7 +56,7 @@ const NavBar = () => {
 
 const AllCountries = () => {
   const countr = Countries();
-  console.log(countr.countries);
+  // console.log(countr.countries);
   const count = Country();
   // console.log(count);
   useEffect(() => {
@@ -68,7 +68,7 @@ const AllCountries = () => {
       <main>
         <div className='allcountries'>
           <div className='container'>
-            <ul>
+            <ul className="countries">
               <li>Country</li>
               {!countr ? (
                 <span>Loading</span>
@@ -80,23 +80,24 @@ const AllCountries = () => {
                 </>
               )}
             </ul>
-            <ul>
+            <ul className="data">
               <li>
                 <span>Confirmed</span>
                 <span>Recovered</span>
                 <span>Positive</span>
                 <span>Deaths</span>
               </li>
-              <li>
-                {/* {Object.entries(count.country).map(([country, code]) => {
+                {!countr?<></>:<>
+                {Object.entries(countr.countries).map(([country, code]) => {
                   return (
                     <Statistics
                       url={`https://covid19.mathdro.id/api/countries/${country}`}
                       key={country}
                     />
                   );
-                })} */}
-              </li>
+                })}
+                </>
+                }
             </ul>
           </div>
         </div>

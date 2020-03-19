@@ -30,34 +30,34 @@ const Statistics = ({ url }) => {
   const { stats, error } = useStats(url);
   if (!stats && !error) {
     return (
-      <section>
+      <li>
         <img src={Spinner} alt='spinner' />
-      </section>
+      </li>
     );
   } else {
     return (
-      <>
+      <li>
         {stats.confirmed ? (
           <span>{stats.confirmed.value}</span>
         ) : (
-          <span>Not recorded</span>
+          <span>Not found</span>
         )}
         {stats.recovered ? (
           <span>{stats.recovered.value}</span>
         ) : (
-          <span>Not recorded</span>
+          <span>Not found</span>
         )}
         {stats.recovered && stats.confirmed ? (
           <span>{stats.confirmed.value - stats.recovered.value}</span>
         ) : (
-          <span>Not recorded</span>
+          <span>Not found</span>
         )}
         {stats.deaths ? (
           <span>{stats.deaths.value}</span>
         ) : (
-          <span>Not recorded</span>
+          <span>Not found</span>
         )}
-      </>
+      </li>
     );
   }
 };
