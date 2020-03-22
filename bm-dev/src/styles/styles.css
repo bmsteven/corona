@@ -580,7 +580,7 @@ main .allcountries .container ul.data li span {
     min-width: 100%;
   }
   main .allcountries .container ul li {
-    height: 50px;
+    height: 80px;
     padding: 0 10px;
     border: 1px solid #e9e5e5;
   }
