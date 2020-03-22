@@ -38,8 +38,8 @@ const Source = () => {
       <div className='container'>
         <div className='left'>
           <h2>
-            Huu ukurasa unatoa taarifa juu ya ugonjwa wa COVID-19, dalili na
-            namna ya kujikinga na ugonjwa wa <span>COVID-19</span>
+            Huu ukurasa unatoa taarifa juu ya ugonjwa wa <span>COVID-19</span>, dalili na
+            namna ya kujikinga
           </h2>
           <p>
             taarifa zote zinatoka moja kwa moja kutoka Chuo Kikuu cha John
