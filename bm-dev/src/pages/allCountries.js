@@ -56,9 +56,6 @@ const NavBar = () => {
 
 const AllCountries = () => {
   const countr = Countries();
-  // console.log(countr.countries);
-  const count = Country();
-  // console.log(count);
   useEffect(() => {
     document.title = `All countries COVID-19 - coronavirus pandemic updates`;
   });

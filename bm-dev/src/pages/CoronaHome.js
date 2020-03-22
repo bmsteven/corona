@@ -62,9 +62,89 @@ const Source = () => {
   );
 };
 
-// const Comparison = () => {
-
-// }
+const Prevention = () => {
+  return (
+    <>
+      <div className='prevention' id='prevention'>
+        <header>
+          <div className='container'>
+            <h1>Uzuiaji</h1>
+            <p>
+              Kwa sasa hamna dawa wala tiba iliyothibitishwa ya COVID-19, dawa
+              kwa ajili ya kinga bado zinafanyiwa majaribio. <br />
+              Njia nzuri za kujikinga na COVID-19 ni kujiepusha na mazingira
+              yenye hawa virusi
+            </p>
+          </div>
+        </header>
+        <div className='showcase'>
+          <div className='do'>
+            <h2>Fanya</h2>
+            <ul>
+              <li>
+                Baki nyumbani kama hakuna ulazima wa kutoka na kama u mgonjwa
+              </li>
+              <li>
+                Jizuie kushika sehemu mbalimbali za uso hasa macho, pua na mdomo
+              </li>
+              <li>
+                Safisha na vijidudu kwa kutumia dawa maalum maeneo ambayo
+                unayagusa mara kwa mara
+              </li>
+              <li>Unapokohoa au kupiga chafya jizibe kwa tissue au kitambaa</li>
+              <li>
+                Jizuie kukaribiana na wagonjwa na vaa barakoa(mask)
+                unapowahudumia wagonjwa wa COVID-19
+              </li>
+              <li>
+                Safisha mikono yako kwa maji yanayotiririka na sabuni walau kwa
+                dakika 20 mara kwa mara
+              </li>
+            </ul>
+          </div>
+          <div className='dont'>
+            <h2>Usifanye</h2>
+            <ul>
+              <li>Kushikana mikono na watu, kukumbatiana, mabusu</li>
+              <li>Kushika macho, mdomo na pua kama mikono yako sio misafi</li>
+              <li>
+                Kuvaa barakoa(mask) kama hujaambukizwa au humhudumii mgonjwa wa
+                COVID-19
+              </li>
+              <li>
+                Kwenda kituo cha afya kama unajihisi dalili tajwa bali piga
+                namba za tahadhari zilizotolewa
+              </li>
+              <li>
+                kwenda kwenye mikusanyiko au kwenda maeneo yenye idadi kubwa
+                sana ya watu bali, Jizuie kadiri unavyoweza kwenda maeneo hayo
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className='video'>
+          <div className='container'>
+            <header>
+              <h1>
+                Tazama video hapa chini kuona namna ya kujikinga na virusi vya
+                corona
+              </h1>
+            </header>
+            <div className='iframe'>
+              <iframe
+                src='https://www.youtube.com/embed/uDLinO-Mf9k'
+                frameborder='0'
+                width='800px'
+                height='450px'
+                title='youtube video'
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
 const CoronaHome = () => {
   useEffect(() => {
@@ -117,9 +197,7 @@ const CoronaHome = () => {
           </div>
         </div>
         <Emergency />
-        {/* <div className='corona-map'>
-        <ImageData />
-      </div> */}
+        <Prevention />
         <Footer />
       </main>
     </>

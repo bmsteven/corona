@@ -25,6 +25,9 @@ const NavBar = () => {
             <a href='#symptoms'>Dalili</a>
           </li>
           <li>
+            <a href='#prevention'>Kuzuia</a>
+          </li>
+          <li>
             <Link to='/all-countries'>Nchi zote</Link>
           </li>
         </ul>
