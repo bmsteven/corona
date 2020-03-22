@@ -42,11 +42,11 @@ const Source = () => {
             namna ya kujikinga
           </h2>
           <p>
-            taarifa zote zinatoka moja kwa moja kutoka Chuo Kikuu cha John
+            Taarifa zote za idadi ya wagonjwa, vifo n.k zinatoka moja kwa moja kutoka Chuo Kikuu cha John
             Hopkins kilichopo Marekani.
           </p>
           <a
-            href='https://covid19.mathdro.id/api'
+            href='https://coronavirus.jhu.edu/'
             target='_blank'
             rel='noopener noreferrer'
             className='primary-btn'
@@ -88,7 +88,7 @@ const Prevention = () => {
                 Jizuie kushika sehemu mbalimbali za uso hasa macho, pua na mdomo
               </li>
               <li>
-                Safisha na vijidudu kwa kutumia dawa maalum maeneo ambayo
+                Safisha na ua vijidudu kwa kutumia dawa maalum maeneo ambayo
                 unayagusa mara kwa mara
               </li>
               <li>Unapokohoa au kupiga chafya jizibe kwa tissue au kitambaa</li>

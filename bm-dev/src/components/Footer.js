@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <div className='container'>
-        made with <FaHeart className='icon' /> by{" "}
+        Imetengenezwa kwa <FaHeart className='icon' /> na{" "}
         <a
           href='http://www.twitter.com/bmsteven_'
           target='_blank'
