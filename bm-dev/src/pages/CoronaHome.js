@@ -51,7 +51,7 @@ const Source = () => {
             rel='noopener noreferrer'
             className='primary-btn'
           >
-            Source
+            Chanzo
           </a>
         </div>
         <div className='right'>
