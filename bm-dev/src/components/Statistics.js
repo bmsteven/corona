@@ -46,8 +46,8 @@ const Statistics = ({ url }) => {
         ) : (
           <span>Not found</span>
         )}
-        {stats.recovered && stats.confirmed ? (
-          <span>{stats.confirmed.value - stats.recovered.value}</span>
+        {stats.recovered && stats.confirmed && stats.deaths ? (
+          <span>{stats.confirmed.value - stats.recovered.value - stats.deaths.value}</span>
         ) : (
           <span>Not found</span>
         )}
