@@ -15,15 +15,6 @@
   padding-bottom: 1.5rem;
 }
 
-.prevention .video .container header h1 {
-  font-size: 1.825rem;
-  padding-bottom: 20px;
-}
-
-.prevention .video .container .iframe {
-  text-align: center;
-}
-
 .prevention .showcase {
   display: flex;
   justify-content: space-between;
@@ -72,4 +63,98 @@
 
 .prevention .showcase div.dont h2, .prevention .showcase div.dont ul {
   margin-right: 33.3333%;
+}
+
+.video .container .iframe {
+  text-align: center;
+}
+
+.video .container .iframe iframe {
+  height: 650px;
+  width: 100%;
+}
+
+@media screen and (max-width: 895px) {
+  .prevention .container {
+    width: 90%;
+  }
+  .prevention .showcase div h2, .prevention .showcase div ul {
+    width: 83%;
+  }
+  .prevention .showcase div.do h2, .prevention .showcase div.do ul {
+    margin-left: 17%;
+  }
+  .prevention .showcase div.dont h2, .prevention .showcase div.dont ul {
+    margin-right: 17%;
+  }
+  .video .container .iframe {
+    text-align: center;
+  }
+  .video .container .iframe iframe {
+    height: 500px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .prevention .container {
+    width: 90%;
+  }
+  .prevention .showcase {
+    flex-direction: column;
+  }
+  .prevention .showcase div {
+    width: 100%;
+    padding: 5%;
+  }
+  .prevention .showcase div h2, .prevention .showcase div ul {
+    width: 100%;
+  }
+  .prevention .showcase div ul li {
+    margin: 20px 0;
+  }
+  .prevention .showcase div.do h2, .prevention .showcase div.do ul {
+    margin-left: 0;
+  }
+  .prevention .showcase div.dont h2, .prevention .showcase div.dont ul {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .prevention header {
+    padding: 7rem 0 2.5rem 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .video .container {
+    width: 100%;
+  }
+  .video .container header {
+    padding: 20px 0;
+  }
+  .video .container .iframe {
+    text-align: center;
+  }
+  .video .container .iframe iframe {
+    height: 330px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .video .container {
+    width: 100%;
+  }
+  .video .container header {
+    padding: 20px 0;
+  }
+  .video .container .iframe {
+    text-align: center;
+  }
+  .video .container .iframe iframe {
+    height: 250px;
+    width: 100%;
+  }
 }

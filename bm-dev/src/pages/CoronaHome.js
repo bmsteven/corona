@@ -134,8 +134,8 @@ const Prevention = () => {
               <iframe
                 src='https://www.youtube.com/embed/uDLinO-Mf9k'
                 frameborder='0'
-                width='800px'
-                height='450px'
+                // width='800px'
+                // height='450px'
                 title='youtube video'
               ></iframe>
             </div>

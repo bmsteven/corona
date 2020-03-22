@@ -147,7 +147,7 @@ nav .container ul li a:hover {
   opacity: .7;
 }
 
-@media screen and (max-width: 545px) {
+@media screen and (max-width: 700px) {
   nav {
     height: 7rem;
   }
@@ -371,7 +371,7 @@ nav .container ul li a:hover {
   font-size: 1.8rem;
 }
 
-@media screen and (max-width: 545px) {
+@media screen and (max-width: 700px) {
   .stats .container {
     padding: 7rem 0 4rem 0;
   }
@@ -494,15 +494,6 @@ nav .container ul li a:hover {
   padding-bottom: 1.5rem;
 }
 
-.prevention .video .container header h1 {
-  font-size: 1.825rem;
-  padding-bottom: 20px;
-}
-
-.prevention .video .container .iframe {
-  text-align: center;
-}
-
 .prevention .showcase {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,6 +547,103 @@ nav .container ul li a:hover {
 
 .prevention .showcase div.dont h2, .prevention .showcase div.dont ul {
   margin-right: 33.3333%;
+}
+
+.video .container .iframe {
+  text-align: center;
+}
+
+.video .container .iframe iframe {
+  height: 650px;
+  width: 100%;
+}
+
+@media screen and (max-width: 895px) {
+  .prevention .container {
+    width: 90%;
+  }
+  .prevention .showcase div h2, .prevention .showcase div ul {
+    width: 83%;
+  }
+  .prevention .showcase div.do h2, .prevention .showcase div.do ul {
+    margin-left: 17%;
+  }
+  .prevention .showcase div.dont h2, .prevention .showcase div.dont ul {
+    margin-right: 17%;
+  }
+  .video .container .iframe {
+    text-align: center;
+  }
+  .video .container .iframe iframe {
+    height: 500px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .prevention .container {
+    width: 90%;
+  }
+  .prevention .showcase {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .prevention .showcase div {
+    width: 100%;
+    padding: 5%;
+  }
+  .prevention .showcase div h2, .prevention .showcase div ul {
+    width: 100%;
+  }
+  .prevention .showcase div ul li {
+    margin: 20px 0;
+  }
+  .prevention .showcase div.do h2, .prevention .showcase div.do ul {
+    margin-left: 0;
+  }
+  .prevention .showcase div.dont h2, .prevention .showcase div.dont ul {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .prevention header {
+    padding: 7rem 0 2.5rem 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .video .container {
+    width: 100%;
+  }
+  .video .container header {
+    padding: 20px 0;
+  }
+  .video .container .iframe {
+    text-align: center;
+  }
+  .video .container .iframe iframe {
+    height: 330px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .video .container {
+    width: 100%;
+  }
+  .video .container header {
+    padding: 20px 0;
+  }
+  .video .container .iframe {
+    text-align: center;
+  }
+  .video .container .iframe iframe {
+    height: 250px;
+    width: 100%;
+  }
 }
 
 footer {
@@ -648,6 +736,14 @@ main .allcountries .container ul.data li span {
           align-items: center;
 }
 
+@media screen and (max-width: 700px) {
+  main .allcountries .container ul li.head {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 7rem;
+  }
+}
+
 @media screen and (max-width: 545px) {
   main .allcountries .container {
     display: -webkit-box;
@@ -669,9 +765,6 @@ main .allcountries .container ul.data li span {
     background: #e9e5e5;
   }
   main .allcountries .container ul li.head {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 7rem;
     background: white;
     font-weight: 700;
     background: #2D3748;
@@ -719,6 +812,12 @@ main .allcountries .container ul.data li span {
 @media screen and (max-width: 900px) {
   .container {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    top: 7rem;
   }
 }
 

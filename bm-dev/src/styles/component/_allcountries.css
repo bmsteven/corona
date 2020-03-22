@@ -41,6 +41,13 @@ main .allcountries .container ul.data li span {
   align-items: center;
 }
 
+@media screen and (max-width: 700px) {
+  main .allcountries .container ul li.head {
+    position: sticky;
+    top: 7rem;
+  }
+}
+
 @media screen and (max-width: 545px) {
   main .allcountries .container {
     display: flex;
@@ -58,8 +65,6 @@ main .allcountries .container ul.data li span {
     background: #e9e5e5;
   }
   main .allcountries .container ul li.head {
-    position: sticky;
-    top: 7rem;
     background: white;
     font-weight: 700;
     background: #2D3748;
