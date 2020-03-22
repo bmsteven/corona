@@ -674,6 +674,18 @@ footer .container a {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 406px) {
+  footer .container {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  footer .container {
+    font-size: .7rem;
+  }
+}
+
 main .allcountries .container {
   display: -webkit-box;
   display: -ms-flexbox;

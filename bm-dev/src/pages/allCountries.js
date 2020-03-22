@@ -18,20 +18,6 @@ const Countries = () => {
   return countr;
 };
 
-const Country = () => {
-  const [count, setCount] = useState();
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await fetch("https://covid19.mathdro.id/api/countries")
-        .then(res => res.json())
-        .catch(err => console.error(err));
-      setCount(data);
-    };
-    fetchData();
-  }, []);
-  return count;
-};
-
 const NavBar = () => {
   return (
     <nav>
