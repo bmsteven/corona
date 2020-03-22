@@ -6,10 +6,22 @@ main
             padding: 50px 0
             ul
                 li
-                    height: 40px
+                    height: 50px
+                    padding: 0 10px
+                    border: 1px solid #e9e5e5
+                    &:nth-child(even) 
+                        background: #e9e5e5
+                    &.head
+                        position: sticky
+                        top: 5rem
+                        background: white
+                        font-weight: 700
+                        background: #2D3748
+                        color: white
+                        
             ul.countries
                 li
-                    margin: 0 10px
+                    // margin: 0 10px
                     display: flex
                     align-items: center
             ul.data
@@ -19,8 +31,52 @@ main
                     // height: 40px
                     span
                         // height: 40px
-                        // margin: 10px
-                        text-align: center
+                        width: 100%
+                        margin: 10px
+                        // text-align: center
                         display: flex
                         justify-content: center
                         align-items: center
+
+@media screen and ( max-width: 545px )
+    main
+        .allcountries
+            .container
+                display: flex
+                justify-content: center
+                padding: 50px 0
+                width: 530px
+                min-width: 100%
+                ul
+                    li
+                        height: 50px
+                        padding: 0 10px
+                        border: 1px solid #e9e5e5
+                        &:nth-child(even) 
+                            background: #e9e5e5
+                        &.head
+                            position: sticky
+                            top: 7rem
+                            background: white
+                            font-weight: 700
+                            background: #2D3748
+                            color: white
+                            
+                ul.countries
+                    li
+                        // margin: 0 10px
+                        display: flex
+                        align-items: center
+                ul.data
+                    li
+                        display: flex
+                        justify-content: space-between
+                        // height: 40px
+                        span
+                            // height: 40px
+                            width: 100%
+                            margin: 10px
+                            // text-align: center
+                            display: flex
+                            justify-content: center
+                            align-items: center

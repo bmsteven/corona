@@ -12,7 +12,7 @@ body {
   background: #010101;
   color: #fff;
   font-family: 'Solway', serif;
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 
 button:focus, input:focus {

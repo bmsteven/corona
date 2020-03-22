@@ -69,7 +69,7 @@ const AllCountries = () => {
         <div className='allcountries'>
           <div className='container'>
             <ul className="countries">
-              <li>Country</li>
+              <li className="head">Country</li>
               {!countr ? (
                 <span>Loading</span>
               ) : (
@@ -81,7 +81,7 @@ const AllCountries = () => {
               )}
             </ul>
             <ul className="data">
-              <li>
+              <li className="head">
                 <span>Confirmed</span>
                 <span>Recovered</span>
                 <span>Positive</span>

@@ -516,11 +516,26 @@ main .allcountries .container {
 }
 
 main .allcountries .container ul li {
-  height: 40px;
+  height: 50px;
+  padding: 0 10px;
+  border: 1px solid #e9e5e5;
+}
+
+main .allcountries .container ul li:nth-child(even) {
+  background: #e9e5e5;
+}
+
+main .allcountries .container ul li.head {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5rem;
+  background: white;
+  font-weight: 700;
+  background: #2D3748;
+  color: white;
 }
 
 main .allcountries .container ul.countries li {
-  margin: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,7 +554,8 @@ main .allcountries .container ul.data li {
 }
 
 main .allcountries .container ul.data li span {
-  text-align: center;
+  width: 100%;
+  margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,6 +565,66 @@ main .allcountries .container ul.data li span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 545px) {
+  main .allcountries .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 50px 0;
+    width: 530px;
+    min-width: 100%;
+  }
+  main .allcountries .container ul li {
+    height: 50px;
+    padding: 0 10px;
+    border: 1px solid #e9e5e5;
+  }
+  main .allcountries .container ul li:nth-child(even) {
+    background: #e9e5e5;
+  }
+  main .allcountries .container ul li.head {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 7rem;
+    background: white;
+    font-weight: 700;
+    background: #2D3748;
+    color: white;
+  }
+  main .allcountries .container ul.countries li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .allcountries .container ul.data li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .allcountries .container ul.data li span {
+    width: 100%;
+    margin: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .corona-map {

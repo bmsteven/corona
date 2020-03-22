@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Spinner from "../images/spinner.gif";
 
 const useStats = url => {
   const [stats, setStats] = useState();
@@ -31,7 +30,7 @@ const Statistics = ({ url }) => {
   if (!stats && !error) {
     return (
       <li>
-        <img src={Spinner} alt='spinner' />
+          please wait...
       </li>
     );
   } else {
