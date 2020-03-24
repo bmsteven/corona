@@ -39,7 +39,6 @@ const NavBar = () => {
 
 const AllCountries = () => {
   const countr = Countries();
-  console.log(countr);
   useEffect(() => {
     document.title = `All countries COVID-19 - coronavirus pandemic updates`;
   });
@@ -52,7 +51,7 @@ const AllCountries = () => {
             <ul className='countries'>
               <li className='head'>Country</li>
               {!countr ? (
-                <span>Loading</span>
+                <span>Loading...</span>
               ) : (
                 <>
                   {Object.entries(countr.countries).map(([index, country]) => {

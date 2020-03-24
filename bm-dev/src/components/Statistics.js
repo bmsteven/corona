@@ -7,7 +7,6 @@ const useStats = url => {
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
-      console.log("mounting");
       const data = await fetch(url)
         .then(res => res.json())
         .catch(err => {
