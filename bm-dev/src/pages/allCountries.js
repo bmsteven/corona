@@ -27,9 +27,6 @@ const NavBar = () => {
             <Link to='/'>COVID-19</Link>
           </h1>
         </div>
-        {/* <div className='burger'>
-          <span></span>
-        </div> */}
         <ul>
           <li>
             <Link to='/'>Nyumbani</Link>
@@ -42,6 +39,7 @@ const NavBar = () => {
 
 const AllCountries = () => {
   const countr = Countries();
+  console.log(countr);
   useEffect(() => {
     document.title = `All countries COVID-19 - coronavirus pandemic updates`;
   });
@@ -51,36 +49,39 @@ const AllCountries = () => {
       <main>
         <div className='allcountries'>
           <div className='container'>
-            <ul className="countries">
-              <li className="head">Country</li>
+            <ul className='countries'>
+              <li className='head'>Country</li>
               {!countr ? (
                 <span>Loading</span>
               ) : (
                 <>
-                  {Object.entries(countr.countries).map(([country, code]) => {
-                    return <li key={country}>{country}</li>;
+                  {Object.entries(countr.countries).map(([index, country]) => {
+                    return <li key={index}>{country.name}</li>;
                   })}
                 </>
               )}
             </ul>
-            <ul className="data">
-              <li className="head">
+            <ul className='data'>
+              <li className='head'>
                 <span>Confirmed</span>
                 <span>Recovered</span>
                 <span>Positive</span>
                 <span>Deaths</span>
               </li>
-                {!countr?<></>:<>
-                {Object.entries(countr.countries).map(([country, code]) => {
-                  return (
-                    <Statistics
-                      url={`https://covid19.mathdro.id/api/countries/${country}`}
-                      key={country}
-                    />
-                  );
-                })}
+              {!countr ? (
+                <></>
+              ) : (
+                <>
+                  {Object.entries(countr.countries).map(([index, country]) => {
+                    return (
+                      <Statistics
+                        url={`https://covid19.mathdro.id/api/countries/${country.name}`}
+                        key={index}
+                      />
+                    );
+                  })}
                 </>
-                }
+              )}
             </ul>
           </div>
         </div>
