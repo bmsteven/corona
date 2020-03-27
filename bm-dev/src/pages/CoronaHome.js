@@ -112,10 +112,6 @@ const Prevention = () => {
                 COVID-19
               </li>
               <li>
-                Kwenda kituo cha afya kama unajihisi dalili tajwa bali piga
-                namba za tahadhari zilizotolewa
-              </li>
-              <li>
                 kwenda kwenye mikusanyiko au kwenda maeneo yenye idadi kubwa
                 sana ya watu bali, Jizuie kadiri unavyoweza kwenda maeneo hayo
               </li>

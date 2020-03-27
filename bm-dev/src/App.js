@@ -4,12 +4,8 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 //pages
-// import Home from "./pages/Home"
 import CoronaHome from "./pages/CoronaHome"
 import AllCountries from "./pages/allCountries"
-// import Corona from "./pages/Corona";
-// import NavBar from "./components/NavBar"
-// import Footer from "./components/Footer"
 
 //styles
 import "./styles/styles.css";

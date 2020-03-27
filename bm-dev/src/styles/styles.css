@@ -813,14 +813,6 @@ main .allcountries .container ul.data li span {
   }
 }
 
-.corona-map {
-  width: 100%;
-}
-
-.corona-map img {
-  width: 100%;
-}
-
 @media screen and (max-width: 900px) {
   .container {
     width: 80%;
