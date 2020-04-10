@@ -25,6 +25,10 @@ const Emergency = () => {
           </span>
           <span>
             piga: <a href='tel:0800110125'>0800110125</a>
+            <span> au</span>
+          </span>
+          <span>
+            piga: <a href='tel:199'>199</a>
           </span>
         </div>
       </div>
