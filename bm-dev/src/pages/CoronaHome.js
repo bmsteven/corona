@@ -112,10 +112,6 @@ const Prevention = () => {
               <li>Kushikana mikono na watu, kukumbatiana, mabusu</li>
               <li>Kushika macho, mdomo na pua kama mikono yako sio misafi</li>
               <li>
-                Kuvaa barakoa(mask) kama hujaambukizwa au humhudumii mgonjwa wa
-                COVID-19
-              </li>
-              <li>
                 kwenda kwenye mikusanyiko au kwenda maeneo yenye idadi kubwa
                 sana ya watu bali, Jizuie kadiri unavyoweza kwenda maeneo hayo
               </li>
