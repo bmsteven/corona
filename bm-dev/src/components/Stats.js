@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Spinner from "../images/spinner.gif";
+import Moment from "react-moment";
 
-const useStats = url => {
+const useStats = (url) => {
   const [stats, setStats] = useState();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState();
@@ -9,8 +10,8 @@ const useStats = url => {
     const fetchData = async () => {
       setLoading(true);
       const data = await fetch(url)
-        .then(res => res.json())
-        .catch(err => {
+        .then((res) => res.json())
+        .catch((err) => {
           setError(err);
         });
       setStats(data);
@@ -21,7 +22,7 @@ const useStats = url => {
   return {
     stats,
     loading,
-    error
+    error,
   };
 };
 
@@ -38,7 +39,13 @@ const Stats = ({ url }) => {
       <section>
         <small>
           Imechapishwa:{" "}
-          {stats.lastUpdate ? <span>{stats.lastUpdate}</span> : <span></span>}
+          {stats.lastUpdate ? (
+            <span>
+              <Moment fromNow>{stats.lastUpdate}</Moment>
+            </span>
+          ) : (
+            ""
+          )}
         </small>
         <div className='showcase'>
           <div className='statBlock'>
