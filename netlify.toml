@@ -1,4 +1,4 @@
 [build]
-base = "bm-dev/"
+base = "covid/"
 publish = "/build/"
 command = "yarn build"

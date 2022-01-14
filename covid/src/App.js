@@ -1,8 +1,7 @@
 import React from "react";
 
 //dependencies
-import { Switch, Route } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 
 //pages
 import CoronaHome from "./pages/CoronaHome";
