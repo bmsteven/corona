@@ -2,7 +2,7 @@ import dayjs from "dayjs"
 import useStats from "../hooks/useStats"
 
 const Stats = ({ url }) => {
-  const { stats, error, loading } = useStats(url)
+  const { stats, loading } = useStats(url)
   if (loading) {
     return <section>Loading...</section>
   } else {

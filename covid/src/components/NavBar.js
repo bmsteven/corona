@@ -12,7 +12,7 @@ const NavBar = () => {
         </div>
         <ul>
           <li>
-            <a href="#">Nyumbani</a>
+            <a href="/#">Nyumbani</a>
           </li>
           <li>
             <a href="#facts">Taarifa</a>
